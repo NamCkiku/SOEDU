@@ -41,6 +41,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +51,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201607130242560_add-migration InitialDB.cs" />
+    <Compile Include="Migrations\201607130242560_add-migration InitialDB.Designer.cs">
+      <DependentUpon>201607130242560_add-migration InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\SOEDUEntity.cs" />
+    <Compile Include="Models\Sys_Assess.cs" />
+    <Compile Include="Models\Sys_Attach.cs" />
+    <Compile Include="Models\Sys_Course.cs" />
+    <Compile Include="Models\Sys_CourseCategory.cs" />
+    <Compile Include="Models\Sys_Lesson.cs" />
+    <Compile Include="Models\Sys_Section.cs" />
+    <Compile Include="Models\Sys_StudentCourse.cs" />
+    <Compile Include="Models\Sys_StudentTest.cs" />
+    <Compile Include="Models\Sys_StudentTestSection.cs" />
+    <Compile Include="Models\Sys_Target.cs" />
+    <Compile Include="Models\Sys_TeacherCourse.cs" />
+    <Compile Include="Models\Sys_Test.cs" />
+    <Compile Include="Models\Sys_TestLesson.cs" />
+    <Compile Include="Models\Sys_TestLessonAnswer.cs" />
+    <Compile Include="Models\Sys_TestLessonQuestion.cs" />
+    <Compile Include="Models\Sys_TestSection.cs" />
+    <Compile Include="Models\Sys_TestSectionAnswer.cs" />
+    <Compile Include="Models\Sys_TestSectionQuestion.cs" />
+    <Compile Include="Models\Sys_Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +87,14 @@
       <Project>{0308d1d3-99ce-4c8d-8779-9416928b7bed}</Project>
       <Name>SOEDU.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607130242560_add-migration InitialDB.resx">
+      <DependentUpon>201607130242560_add-migration InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
