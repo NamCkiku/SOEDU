@@ -3,7 +3,7 @@ using SOEDU.Repository.Infrastructure;
 
 namespace SOEDU.Repository.Repositories
 {
-    public interface ITestSectionRepository
+    public interface ITestSectionRepository : IRepository<Sys_TestSection>
     {
     }
 
