@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SOEDU.Repository.Repositories
 {
-    public interface ICourseCategoryRepository
+    public interface ICourseCategoryRepository: IRepository<Sys_CourseCategory>
     {
 
     }

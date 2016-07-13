@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SOEDU.Repository.Repositories
 {
-    public interface IUsersRepository
+    public interface IUsersRepository : IRepository<Sys_Users>
     {
 
     }

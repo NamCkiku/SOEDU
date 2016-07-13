@@ -57,7 +57,25 @@
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AssessRepository.cs" />
+    <Compile Include="Repositories\AttachRepository.cs" />
+    <Compile Include="Repositories\CourseCategoryRepository.cs" />
     <Compile Include="Repositories\CourseRepository.cs" />
+    <Compile Include="Repositories\LessonRepository.cs" />
+    <Compile Include="Repositories\SectionRepository.cs" />
+    <Compile Include="Repositories\StudentCourseRepository.cs" />
+    <Compile Include="Repositories\StudentTestRepository.cs" />
+    <Compile Include="Repositories\StudentTestSectionRepository.cs" />
+    <Compile Include="Repositories\TargetRepository.cs" />
+    <Compile Include="Repositories\TeacherCourseRepository.cs" />
+    <Compile Include="Repositories\TestLessonAnswerRepository.cs" />
+    <Compile Include="Repositories\TestLessonQuestionRepository.cs" />
+    <Compile Include="Repositories\TestLessonRepository.cs" />
+    <Compile Include="Repositories\TestRepository.cs" />
+    <Compile Include="Repositories\TestSectionAnswerRepository.cs" />
+    <Compile Include="Repositories\TestSectionQuestionRepository.cs" />
+    <Compile Include="Repositories\TestSectionRepository.cs" />
+    <Compile Include="Repositories\UsersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

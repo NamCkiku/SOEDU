@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SOEDU.Repository.Repositories
 {
-    public interface ITestRepository
+    public interface ITestRepository : IRepository<Sys_Test>
     {
 
     }
