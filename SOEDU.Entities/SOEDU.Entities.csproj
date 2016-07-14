@@ -55,12 +55,17 @@
     <Compile Include="Migrations\201607130242560_add-migration InitialDB.Designer.cs">
       <DependentUpon>201607130242560_add-migration InitialDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607140319591_AddErrorTable.cs" />
+    <Compile Include="Migrations\201607140319591_AddErrorTable.Designer.cs">
+      <DependentUpon>201607140319591_AddErrorTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SOEDUEntity.cs" />
     <Compile Include="Models\Sys_Assess.cs" />
     <Compile Include="Models\Sys_Attach.cs" />
     <Compile Include="Models\Sys_Course.cs" />
     <Compile Include="Models\Sys_CourseCategory.cs" />
+    <Compile Include="Models\Sys_Error.cs" />
     <Compile Include="Models\Sys_Lesson.cs" />
     <Compile Include="Models\Sys_Section.cs" />
     <Compile Include="Models\Sys_StudentCourse.cs" />
@@ -94,6 +99,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201607130242560_add-migration InitialDB.resx">
       <DependentUpon>201607130242560_add-migration InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607140319591_AddErrorTable.resx">
+      <DependentUpon>201607140319591_AddErrorTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

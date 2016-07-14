@@ -31,6 +31,7 @@ namespace SOEDU.Entities.Models
         public virtual DbSet<Sys_TestSectionAnswer> Sys_TestSectionAnswer { get; set; }
         public virtual DbSet<Sys_TestSectionQuestion> Sys_TestSectionQuestion { get; set; }
         public virtual DbSet<Sys_Users> Sys_Users { get; set; }
+        public virtual DbSet<Sys_Error> Sys_Errors { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
