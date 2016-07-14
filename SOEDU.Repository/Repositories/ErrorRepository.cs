@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace SOEDU.Repository.Repositories
 {
-    public interface ICourseRepository: IRepository<Sys_Course>
+    public interface IErrorRepository : IRepository<Sys_Error>
     {
 
     }
-    public class CourseRepository : RepositoryBase<Sys_Course>, ICourseRepository
+    class ErrorRepository : RepositoryBase<Sys_Error>, IErrorRepository
     {
-        public CourseRepository(IDbFactory dbFactory) : base(dbFactory)
+        public ErrorRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }
