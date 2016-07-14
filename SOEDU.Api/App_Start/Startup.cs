@@ -1,29 +1,28 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
-using Owin;
-using Autofac;
-using System.Reflection;
+﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
-using SOEDU.Repository.Infrastructure;
+using Microsoft.Owin;
+using Owin;
 using SOEDU.Entities.Models;
+using SOEDU.Repository.Infrastructure;
 using SOEDU.Repository.Repositories;
 using SOEDU.Service;
-using System.Web.Mvc;
+using System.Reflection;
 using System.Web.Http;
+using System.Web.Mvc;
 
 [assembly: OwinStartup(typeof(SOEDU.Api.App_Start.Startup))]
 
 namespace SOEDU.Api.App_Start
 {
-    public class Startup
+    public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
             ConfigAutofac(app);
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
         }
+
         private void ConfigAutofac(IAppBuilder app)
         {
             var builder = new ContainerBuilder();
@@ -43,7 +42,6 @@ namespace SOEDU.Api.App_Start
             //builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
             //builder.Register(c => app.GetDataProtectionProvider()).InstancePerRequest();
 
-
             // Repositories
             builder.RegisterAssemblyTypes(typeof(CourseRepository).Assembly)
                 .Where(t => t.Name.EndsWith("Repository"))
@@ -58,7 +56,6 @@ namespace SOEDU.Api.App_Start
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver((IContainer)container); //Set the WebApi DependencyResolver
-
         }
     }
 }

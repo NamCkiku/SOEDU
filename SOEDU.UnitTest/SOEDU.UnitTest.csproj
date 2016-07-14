@@ -53,10 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SOEDU.Api\SOEDU.Api.csproj">
-      <Project>{34924434-10c3-47e6-a0ea-65c77652ff43}</Project>
-      <Name>SOEDU.Api</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SOEDU.Common\SOEDU.Common.csproj">
       <Project>{0308d1d3-99ce-4c8d-8779-9416928b7bed}</Project>
       <Name>SOEDU.Common</Name>
