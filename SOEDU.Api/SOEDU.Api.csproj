@@ -56,6 +56,10 @@
       <HintPath>..\packages\Autofac.WebApi2.3.4.0\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -154,7 +158,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -167,6 +170,19 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
+    <Compile Include="Mappings\AutoMapperConfiguration.cs" />
+    <Compile Include="Models\ViewModels\AssessViewModel.cs" />
+    <Compile Include="Models\ViewModels\CourseCategoryViewModel.cs" />
+    <Compile Include="Models\ViewModels\CourseViewModel.cs" />
+    <Compile Include="Models\ViewModels\LessonViewModel.cs" />
+    <Compile Include="Models\ViewModels\SectionViewModel.cs" />
+    <Compile Include="Models\ViewModels\StudentCourseViewModel.cs" />
+    <Compile Include="Models\ViewModels\StudentTestSectionViewModel.cs" />
+    <Compile Include="Models\ViewModels\StudentTestViewModel.cs" />
+    <Compile Include="Models\ViewModels\TargetViewModel.cs" />
+    <Compile Include="Models\ViewModels\TeacherCourseViewModel.cs" />
+    <Compile Include="Models\ViewModels\TestSectionViewModel.cs" />
+    <Compile Include="Models\ViewModels\UsersViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
