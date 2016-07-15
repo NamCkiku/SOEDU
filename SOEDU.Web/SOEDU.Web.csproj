@@ -198,6 +198,10 @@
     <Content Include="Content\js\jquery.scrollUp.min.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\owl.carousel.min.js" />
+    <Content Include="Content\Plugins\angular\angular-csp.css" />
+    <Content Include="Content\Plugins\angular\angular.js" />
+    <Content Include="Content\Plugins\angular\angular.min.js" />
+    <Content Include="Content\Plugins\angular\index.js" />
     <Content Include="Content\Plugins\bootstrap-social-gh-pages\.gitignore" />
     <Content Include="Content\Plugins\bootstrap-social-gh-pages\assets\css\bootstrap.css" />
     <Content Include="Content\Plugins\bootstrap-social-gh-pages\assets\css\docs.css" />
@@ -418,6 +422,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Plugins\angular\.bower.json" />
+    <Content Include="Content\Plugins\angular\angular.min.js.gzip" />
+    <Content Include="Content\Plugins\angular\angular.min.js.map" />
+    <Content Include="Content\Plugins\angular\bower.json" />
+    <Content Include="Content\Plugins\angular\package.json" />
+    <Content Include="Content\Plugins\angular\README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
