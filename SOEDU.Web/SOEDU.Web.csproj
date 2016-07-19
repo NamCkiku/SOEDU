@@ -167,6 +167,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -193,6 +194,7 @@
     <Content Include="Content\Img\search-icon.png" />
     <Content Include="Content\Img\slide-01.jpg" />
     <Content Include="Content\Img\slide-02.jpg" />
+    <Content Include="Content\Img\top.png" />
     <Content Include="Content\js\jquery-1.10.2.min.js" />
     <Content Include="Content\js\jquery-1.8.3.min.js" />
     <Content Include="Content\js\jquery.scrollUp.min.js" />
@@ -424,16 +426,15 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".bowerrc" />
-    <Content Include="bower.json" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Content\Plugins\angular\.bower.json" />
     <Content Include="Content\Plugins\angular\angular.min.js.gzip" />
     <Content Include="Content\Plugins\angular\angular.min.js.map" />
     <Content Include="Content\Plugins\angular\bower.json" />
     <Content Include="Content\Plugins\angular\package.json" />
     <Content Include="Content\Plugins\angular\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Course\Detail.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

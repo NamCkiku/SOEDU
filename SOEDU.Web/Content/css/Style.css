@@ -300,7 +300,8 @@ a, a:hover, a:focus {
 .sto-content {
     width: 100%;
     float: left;
-    padding-top: 10px;
+    padding-top: 20px;
+    background: #F7F7F7;
 }
 
 /** Mega Menu */ .mega-container {
@@ -609,24 +610,24 @@ a, a:hover, a:focus {
             border-bottom: 3px solid rgba(0, 0, 0, .15);
         }
 
-            .list-course .list-course-girds .polet-title h3 span {
-                font-size: 20px;
-                color: #181818;
-                margin: 0 0 1em 0;
-                font-weight: 600;
-                border-bottom: 4px solid #d8373e;
-                /*float: left;*/
-            }
+    .list-course .body-course-info-course-girds .polet-title h3 span {
+        font-size: 20px;
+        color: #181818;
+        margin: 0 0 1em 0;
+        font-weight: 600;
+        border-bottom: 4px solid #d8373e;
+        /*float: left;*/
+    }
 
-                .list-course .list-course-girds .polet-title h3 span i {
-                    padding-left: 20px;
-                }
+    .list-course .list-course-girds .polet-title h3 span i {
+        padding-left: 20px;
+    }
 
-            .list-course .list-course-girds .polet-title h3 .float-right {
-                float: right;
-                font-size: 16px;
-                border-bottom: none;
-            }
+    .list-course .list-course-girds .polet-title h3 .float-right {
+        float: right;
+        font-size: 16px;
+        border-bottom: none;
+    }
 
     .list-course .polet-content {
         padding-top: 10px;
@@ -1031,21 +1032,430 @@ footer {
     }
 
 a#scrollUp {
-    border-radius: 50%;
     bottom: 0px;
     right: 10px;
-    padding: 5px 10px;
-    background: #d8373e;
     color: #FFF;
     -webkit-animation: bounce 2s ease infinite;
     animation: bounce 2s ease infinite;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
 }
+
+    a#scrollUp:hover {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 
     a#scrollUp i {
         font-size: 30px;
     }
 
 
+/*Course-Detail-Info*/
+
+.hiddenmenu {
+    display: none;
+    position: fixed;
+    background-color: #009B9B;
+    box-shadow: 0px 0px 13px 0px #676464;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    color: #fff;
+}
+
+.nav-hidden-menu ul li {
+    float: left;
+    padding: 20px;
+}
+
+    .nav-hidden-menu ul li a {
+        color: #fff;
+    }
+
+.hiddenmenu .icon-wallet-money {
+    display: none;
+}
+
+.btn-hoc .course_button {
+    background-color: cornflowerblue !important;
+    padding: 12px 6px !important;
+}
+
+.gia-hidenmenu {
+    padding: 12px 6px;
+    font-size: 17pt;
+}
+
+    .gia-hidenmenu .amount {
+        color: #fff !important;
+    }
+
+.activehiddenmenu {
+    border-bottom: 5px solid orange;
+}
+
+.thongtingianvien {
+    padding: 20px;
+}
+
+.bio {
+    padding: 15px;
+}
+
+/*End hidden menu*/
+
+
+.body-course-info {
+    padding-top: 20px;
+    box-shadow: 0px 0px 13px 0px #EAE2E2;
+    background: #fff;
+}
+
+.sto-course-info {
+}
+
+    .sto-course-info .sto-course-title {
+        padding-bottom: 20px;
+    }
+
+        .sto-course-info .sto-course-title .sto-teacher-info {
+            text-align: center;
+        }
+
+            .sto-course-info .sto-course-title .sto-teacher-info .instructor-course {
+            }
+
+                .sto-course-info .sto-course-title .sto-teacher-info .instructor-course .item-avatar {
+                }
+
+                    .sto-course-info .sto-course-title .sto-teacher-info .instructor-course .item-avatar img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                    }
+
+            .sto-course-info .sto-course-title .sto-teacher-info .course-instructor {
+                margin: 0;
+                font-size: 13px;
+                padding-top: 10px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+                .sto-course-info .sto-course-title .sto-teacher-info .course-instructor a {
+                    color: black;
+                    font-weight: 600;
+                }
+
+                    .sto-course-info .sto-course-title .sto-teacher-info .course-instructor a span {
+                        display: block;
+                        font-size: 11px;
+                        font-weight: 600;
+                    }
+
+        .sto-course-info .sto-course-title h1 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+            color: #313b3d;
+            padding-top: 30px;
+        }
+
+        .sto-course-info .sto-course-title #item-meta {
+        }
+
+            .sto-course-info .sto-course-title #item-meta .course-common-info {
+                text-align: left;
+                padding-top: 10px;
+                font-family: roboto;
+                color: #313b3d;
+            }
+
+                .sto-course-info .sto-course-title #item-meta .course-common-info .fa {
+                    font-size: 32px;
+                    padding-right: 10px;
+                }
+
+.sto-pricing-course {
+    position: relative;
+    background: #FFF;
+    border-radius: 2px;
+}
+
+    .sto-pricing-course .actions {
+    }
+
+    .sto-pricing-course .btn {
+        font-size: 25px;
+        line-height: 1.6;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #FFF;
+        border: none;
+        width: 100%;
+    }
+
+    .sto-pricing-course .course_details {
+        margin-top: 20px;
+    }
+
+        .sto-pricing-course .course_details ul {
+            padding: 0px;
+        }
+
+        .sto-pricing-course .course_details li {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sto-pricing-course .course_details > ul > li:first-child {
+            min-height: 40px;
+            font-size: 16px;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+            .sto-pricing-course .course_details > ul > li:first-child a,
+            .sto-pricing-course .course_details > ul > li:first-child strong > span {
+                color: #70c989;
+            }
+
+                .sto-pricing-course .course_details > ul > li:first-child a strong > span,
+                .sto-pricing-course .course_details > ul > li:first-child span.subs {
+                    font-size: 11px;
+                    color: #70c989;
+                }
+
+                .sto-pricing-course .course_details > ul > li:first-child strong > span.subs {
+                    font-size: 11px;
+                    padding-left: 2px;
+                }
+
+        .sto-pricing-course .course_details li {
+            padding: 6px 0;
+            position: relative;
+            font-size: 12px;
+        }
+
+        .sto-pricing-course .course_details ul.pricing_course {
+            width: 100%;
+        }
+
+        .sto-pricing-course .course_details > ul > li:first-child > strong {
+            padding-top: 8px;
+            color: #70c989;
+            display: inline-block;
+        }
+
+        .sto-pricing-course .course_details li a {
+            font-weight: 600;
+        }
+
+.course_details li i {
+    float: right;
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 10px;
+    font-style: normal;
+}
+
+    .course_details li i.icon-wallet-money {
+        margin-top: 12px;
+    }
+
+.sto-item-share {
+    padding-top: 20px;
+}
+
+    .sto-item-share ul {
+        float: left;
+        margin: -5px 5px 0 !important;
+        padding: 0;
+        list-style: none !important;
+        display: inline-block;
+    }
+
+        .sto-item-share ul li {
+            padding: 8px 0;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+            .sto-item-share ul li a {
+                padding: 10px 20px 10px;
+                font-size: 17px;
+                background: rgb(0, 155, 155);
+                border-radius: 20px;
+                color: #FFF;
+                line-height: 1em;
+                font-weight: 400;
+            }
+
+                .sto-item-share ul li a span {
+                }
+
+.sto-course-decription {
+    padding-top: 30px;
+    min-height: 700px;
+}
+
+.course-navigation {
+    background: transparent;
+    border-bottom: 3px solid #b22bd9;
+    text-align: center;
+}
+
+    .course-navigation li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+        line-height: 20px;
+        width: 24%;
+        text-align: center;
+        background: transparent;
+        position: relative;
+    }
+
+        .course-navigation li.active a, .course-navigation li a:hover {
+            background: transparent;
+            color: #b22bd9;
+        }
+
+        .course-navigation li a {
+            padding: 0px 0px;
+            /*color: #fff !important;*/
+        }
+
+        .course-navigation li.active:after {
+            width: 0;
+            height: 0;
+            content: " ";
+            border-style: solid;
+            border-width: 0 6px 6px 6px;
+            border-color: transparent transparent #b22bd9 transparent;
+            position: absolute;
+            bottom: 0;
+            left: 46%;
+        }
+
+.sto-course-decription .sto-course-introduction {
+    width: 100%;
+    float: left;
+}
+
+    .sto-course-decription .sto-course-introduction .collapse-text {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+.sto-course-decription .sto-course-teacher {
+    width: 100%;
+    float: left;
+}
+
+    .sto-course-decription .sto-course-teacher img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+/*COURSE CURRICULUM*/
+
+.course_curriculum .course_section {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 10px 0;
+    border-bottom: 4px solid #EFEFEF;
+}
+
+.course_lesson {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #EFEFEF;
+    position: relative;
+}
+
+
+    .course_lesson i {
+        float: left;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .course_lesson h6 {
+        margin: 0 130px 0 20px;
+        font-size: 15px;
+    }
+
+        .course_lesson h6 a span {
+            padding: 4px;
+            margin: 0 10px;
+            max-width: 48px;
+            text-align: center;
+            border: 1px solid #70c989;
+            background-color: #70c989;
+            color: #FFF;
+            background-image: url(../images/button.png);
+            border-radius: 2px;
+            font-weight: 600;
+            line-height: 1;
+            position: relative;
+            top: 0;
+        }
+
+    .course_lesson span, .course_lesson b {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .course_lesson b {
+        display: none;
+    }
+
+    .course_lesson small + small {
+        display: block;
+        margin-left: 26px;
+    }
+
+
+
+
+/*Khóa Học Liên Quan*/
+.sto-course-link {
+    box-shadow: 0px 5px 31px -7px;
+}
+
+    .sto-course-link ul {
+        padding-left: 0px;
+    }
+
+        .sto-course-link ul li {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+.title-course-link {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
 @media(max-width:979px) {
     .navbar-collapse {
@@ -1132,7 +1542,7 @@ a#scrollUp {
     }
 }
 /*Edit padding*/
-.padding-bottom-xs-10 {
+.padding-bottom-xs-10; {
     padding-bottom: 10px;
 }
 
@@ -1154,4 +1564,8 @@ a#scrollUp {
 
 .nopadding {
     padding: 0;
+}
+
+.nomargin {
+    margin: 0;
 }
