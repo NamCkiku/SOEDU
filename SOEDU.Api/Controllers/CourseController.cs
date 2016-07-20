@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace SOEDU.Api.Controllers
 {
@@ -20,14 +21,14 @@ namespace SOEDU.Api.Controllers
         }
         [Route("getall")]
         public HttpResponseMessage Get(HttpRequestMessage request)
-        {
+            {
             return CreateHttpResponse(request, () =>
             {
                 var listCategory = _courseService.GetAll();
 
                 //var listPostCategoryVm = Mapper.Map<List<PostCategoryViewModel>>(listCategory);
 
-                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK);
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listCategory);
 
                 return response;
             });

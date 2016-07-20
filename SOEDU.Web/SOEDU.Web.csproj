@@ -179,6 +179,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\commonService\notificationService.js" />
+    <Content Include="app\controllers\courseController\courseController.js" />
+    <Content Include="app\services\apiService.js" />
     <Content Include="Content\css\owl.carousel.css" />
     <Content Include="Content\css\Style.css" />
     <Content Include="Content\Img\20160326091646-56f5f10e5c782.png" />
@@ -245,6 +249,10 @@
     <Content Include="Content\Plugins\font-awesome-4.5.0\css\font-awesome.min.css" />
     <Content Include="Content\Plugins\font-awesome-4.5.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Plugins\font-awesome-4.5.0\HELP-US-OUT.txt" />
+    <Content Include="Content\Plugins\toastr\toastr.css" />
+    <Content Include="Content\Plugins\toastr\toastr.js" />
+    <Content Include="Content\Plugins\toastr\toastr.min.css" />
+    <Content Include="Content\Plugins\toastr\toastr.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -259,6 +267,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\directives\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
@@ -435,6 +444,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Course\Detail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Plugins\toastr\.bower.json" />
+    <Content Include="Content\Plugins\toastr\bower.json" />
+    <Content Include="Content\Plugins\toastr\README.md" />
+    <Content Include="Content\Plugins\toastr\toastr.js.map" />
+    <Content Include="Content\Plugins\toastr\toastr.less" />
+    <Content Include="Content\Plugins\toastr\toastr.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
