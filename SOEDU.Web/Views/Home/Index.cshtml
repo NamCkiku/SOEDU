@@ -3,1226 +3,1229 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div ng-controller="app.teacher.CourseByTeacherController as vm">
-    <ul ng-repeat="course in vm.course">
-        <li>{{course.Course_Name}}</li>
-    </ul>
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="list-course">
-                <div class="list-course-girds">
-                    <div class="polet-title">
-                        <h3>
-                            <span>KHÓA HỌC NỔI BẬT<i class="fa fa-angle-right"></i></span>
-                            <!--<span class="float-right hidden-xs">Xắp Xếp Theo</span>-->
-                        </h3>
-                    </div>
-                    <div id="featured-course" class="polet-content owl-container">
-                        <div class="owl">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+<div class="row" ng-controller="courseController">
+    <table ng-repeat="items in courses" border="1">
+        <tr>
+            <td>{{items.Course_Name}}</td>
+            <td>{{items.Description}}</td>
+            
+        </tr>
+    </table>
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="list-course">
+            <div class="list-course-girds">
+                <div class="polet-title">
+                    <h3>
+                        <span>KHÓA HỌC NỔI BẬT<i class="fa fa-angle-right"></i></span>
+                        <!--<span class="float-right hidden-xs">Xắp Xếp Theo</span>-->
+                    </h3>
+                </div>
+                <div id="featured-course" class="polet-content owl-container">
+                    <div class="owl">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="list-course">
-                <div class="list-course-girds">
-                    <div class="polet-title">
-                        <h3>
-                            <span>KHÓA HỌC NỔI BẬT<i class="fa fa-angle-right"></i></span>
-                            <!--<span class="float-right hidden-xs">Xắp Xếp Theo</span>-->
-                        </h3>
-                    </div>
-                    <div id="featured-course" class="polet-content owl-container">
-                        <div class="owl">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+</div>
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="list-course">
+            <div class="list-course-girds">
+                <div class="polet-title">
+                    <h3>
+                        <span>KHÓA HỌC NỔI BẬT<i class="fa fa-angle-right"></i></span>
+                        <!--<span class="float-right hidden-xs">Xắp Xếp Theo</span>-->
+                    </h3>
+                </div>
+                <div id="featured-course" class="polet-content owl-container">
+                    <div class="owl">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="list-course">
-                <div class="list-course-girds">
-                    <div class="polet-title">
-                        <h3>
-                            <span>KHÓA HỌC NỔI BẬT<i class="fa fa-angle-right"></i></span>
-                            <!--<span class="float-right hidden-xs">Xắp Xếp Theo</span>-->
-                        </h3>
-                    </div>
-                    <div id="featured-course" class="polet-content owl-container">
-                        <div class="owl">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+</div>
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="list-course">
+            <div class="list-course-girds">
+                <div class="polet-title">
+                    <h3>
+                        <span>KHÓA HỌC NỔI BẬT<i class="fa fa-angle-right"></i></span>
+                        <!--<span class="float-right hidden-xs">Xắp Xếp Theo</span>-->
+                    </h3>
+                </div>
+                <div id="featured-course" class="polet-content owl-container">
+                    <div class="owl">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
-                                <div class="item-inner">
-                                    <div class="item-course-img">
-                                        <div class="item-course-icon">
-                                            <div class="new-icon"></div>
-                                        </div>
-                                        <a href="#">
-                                            <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
-                                        </a>
-                                    </div>
-                                    <div class="item-course-info">
-                                        <a href="#">
-                                            <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
-                                        </a>
-                                        <div class="item-course-info-rating">
-                                            <div class="rate-box">
-                                                <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-course-info-teacher">
-                                            <div class="item-course-info-teacher-ava">
-                                                <img src="~/Content/Img/ava_nguyen_minh.jpg" />
 
-                                                <div class="item-course-info-teacher-name">
-                                                    Trần Hoàng Nam
-                                                </div>
-                                                <div class="item-course-info-teacher-details">
-                                                    Đồng sáng lập DeltaViet Education Corporation
-                                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-course padding-bottom-xs-10">
+                            <div class="item-inner">
+                                <div class="item-course-img">
+                                    <div class="item-course-icon">
+                                        <div class="new-icon"></div>
+                                    </div>
+                                    <a href="#">
+                                        <img src="~/Content/Img/20160326091646-56f5f10e5c782.png" />
+                                    </a>
+                                </div>
+                                <div class="item-course-info">
+                                    <a href="#">
+                                        <span class="item-course-info-name">Ôn thi 10 chuyên Sinh - Nắm vững từ lý thuyết đến bài tập cùng chuyên Khoa Học Tự Nhiên</span>
+                                    </a>
+                                    <div class="item-course-info-rating">
+                                        <div class="rate-box">
+                                            <i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <div class="item-course-info-teacher">
+                                        <div class="item-course-info-teacher-ava">
+                                            <img src="~/Content/Img/ava_nguyen_minh.jpg" />
+
+                                            <div class="item-course-info-teacher-name">
+                                                Trần Hoàng Nam
+                                            </div>
+                                            <div class="item-course-info-teacher-details">
+                                                Đồng sáng lập DeltaViet Education Corporation
                                             </div>
                                         </div>
-                                        <div class="item-course-info-price">
-                                            <span class="promo-price">250.000đ</span>
-                                            <span class="item-course-info-cf-price">300.000đ</span>
-                                            <span class="float-right hidden-sm hidden-xs">
-                                                1.382&nbsp;
-                                                <span class="fa fa-user float-right"></span>
-                                            </span>
-                                        </div>
+                                    </div>
+                                    <div class="item-course-info-price">
+                                        <span class="promo-price">250.000đ</span>
+                                        <span class="item-course-info-cf-price">300.000đ</span>
+                                        <span class="float-right hidden-sm hidden-xs">
+                                            1.382&nbsp;
+                                            <span class="fa fa-user float-right"></span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
 </div>
