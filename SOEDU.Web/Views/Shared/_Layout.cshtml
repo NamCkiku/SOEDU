@@ -4,6 +4,8 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     <link href="~/Content/Plugins/toastr/toastr.css" rel="stylesheet" />
+    <link href="~/Content/Plugins/slidebar/slidebars.css" rel="stylesheet" />
+    <link href="~/Content/Plugins/Nivo-Slider-master/Nivo-Slider-master/nivo-slider.css" rel="stylesheet" />
 </head>
 <body>
     <div class="sto-wrapper">
@@ -108,6 +110,8 @@
     </div>
     @Scripts.Render("~/bundles/jquery")
     <script src="~/Content/Plugins/toastr/toastr.js"></script>
+    <script src="~/Content/Plugins/slidebar/slidebars.min.js"></script>
+    <script src="~/Content/Plugins/Nivo-Slider-master/Nivo-Slider-master/jquery.nivo.slider.js"></script>
     @Scripts.Render("~/bundles/angular")
     <script src="~/app/app.js"></script>
     <script src="~/app/commonService/notificationService.js"></script>
@@ -149,7 +153,29 @@
                 pagination: false,
                 scrollPerPage: true,
             });
+            $(window).load(function () {
+                $('#ma-inivoslider-banner7').nivoSlider({
+                    effect: 'random',
+                    slices: 15,
+                    animSpeed: 1000,
+                    pauseTime: 6000,
+                    startSlide: 0,
+                    controlNav: false,
+                    controlNavThumbs: false,
+                    pauseOnHover: true,
+                    manualAdvance: false,
+                    prevText: 'Prev',
+                    nextText: 'Next',
+                });
+            });
         });
+    </script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $.slidebars();
+            });
+        })(jQuery);
     </script>
 </body>
 </html>

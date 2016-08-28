@@ -5,8 +5,9 @@
 
 
 <div class="row" ng-controller="courseController">
-    <table ng-repeat="items in courses" border="1">
-        <tr>
+
+    <table border="1">
+        <tr ng-repeat="items in courses">
             <td>{{items.Course_Name}}</td>
             <td>{{items.Description}}</td>
             
