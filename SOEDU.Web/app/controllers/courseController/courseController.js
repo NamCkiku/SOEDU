@@ -6,7 +6,7 @@
         $scope.courses = [];
         function getAllCourse() {
             apiService.get('http://localhost:2146/api/course/getall', null, function (result) {
-                $scope.courses = result.data.Items;
+                $scope.courses = result.data;
             }, function () {
                 console.log('Load product failed.');
             });

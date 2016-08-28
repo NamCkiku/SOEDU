@@ -134,13 +134,27 @@ a, a:hover, a:focus {
 
     .navbar-inverse .navbar-toggle:hover,
     .navbar-inverse .navbar-toggle:focus {
-        background-color: #eee;
+        background-color: #fff;
     }
 
     .navbar-inverse .navbar-toggle .icon-bar {
         background: #333;
     }
 
+.nav-menutop2 ul li {
+    border-bottom: 1px solid black;
+}
+
+    .nav-menutop2 ul li a {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        color: #FFF;
+    }
+
+        .nav-menutop2 ul li a:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
 /*End Header*/
 /*Model -Login*/
 .modal.in .modal-dialog {
@@ -347,7 +361,7 @@ a, a:hover, a:focus {
 
     .mega-menu-category > .nav > li > a {
         border-bottom: 2px solid #f1f1f1;
-        padding: 13.5px 15px;
+        padding: 13px 15px;
         color: #404040;
         background-color: #fff;
     }
@@ -571,7 +585,7 @@ a, a:hover, a:focus {
                 }
 
             .portlet-hot-news .portlet-hot-news-content .items-hotnews li {
-                min-height: 48px;
+                min-height: 40px;
                 position: relative;
                 margin-top: 15px;
                 margin-left: 0px;
@@ -1569,3 +1583,132 @@ a#scrollUp {
 .nomargin {
     margin: 0;
 }
+
+
+
+
+
+
+
+
+.flex-direction-nav a,
+.nivo-directionNav a {
+    width: 50px;
+    height: 50px;
+    margin: -29px 0 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 0;
+    z-index: 9;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    background: #000;
+    text-decoration: none !important;
+}
+
+    .flex-direction-nav .flex-next,
+    .nivo-directionNav a.nivo-nextNav {
+        background-position: 100% 0;
+        right: -50px;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+    .flex-direction-nav .flex-prev,
+    .nivo-directionNav a.nivo-prevNav {
+        left: -50px;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+.ma-nivoslider:hover .nivo-directionNav a.nivo-nextNav {
+    right: -25px;
+    opacity: 1;
+}
+
+.ma-nivoslider:hover .nivo-directionNav a.nivo-prevNav {
+    left: -25px;
+    opacity: 1;
+}
+
+.flexslider .flex-next:hover,
+.nivo-directionNav a.nivo-nextNav:hover {
+    background: #404048;
+}
+
+.flexslider .flex-prev:hover,
+.nivo-directionNav a.nivo-prevNav:hover {
+    background: #404048;
+}
+
+.flex-direction-nav .flex-disabled {
+    opacity: .3 !important;
+    filter: alpha(opacity=30);
+    cursor: default;
+}
+
+.flex-direction-nav a:before,
+.nivo-directionNav a:before {
+    display: block;
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+.flex-direction-nav .flex-prev:before,
+.nivo-directionNav a.nivo-prevNav:before {
+    content: "\f104";
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+}
+
+.flex-direction-nav .flex-next:before,
+.nivo-directionNav a.nivo-nextNav:before {
+    content: "\f105";
+    transform: rotate(-135deg) translateX(-25px);
+    -webkit-transform: rotate(-135deg) translateX(-25px);
+    -moz-transform: rotate(-135deg) translateX(-25px);
+}
+
+.flex-control-nav,
+.nivo-controlNav {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+
+    .flex-control-paging li a:hover,
+    .flex-control-paging li a.flex-active,
+    .nivo-controlNav a:hover,
+    .nivo-controlNav a.active {
+        cursor: pointer;
+        width: 11px;
+        height: 11px;
+        border: 3px solid #d8373e;
+    }
+
+    .nivo-controlNav a {
+        border: 0 none;
+        display: inline-block;
+        height: 11px;
+        margin: 0 3px;
+        font-size: 0;
+        width: 11px;
+        cursor: pointer;
+        position: relative;
+        z-index: 9;
+        background-color: #fff;
+        border: 3px solid transparent;
+    }

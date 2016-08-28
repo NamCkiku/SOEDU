@@ -249,6 +249,37 @@
     <Content Include="Content\Plugins\font-awesome-4.5.0\css\font-awesome.min.css" />
     <Content Include="Content\Plugins\font-awesome-4.5.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Plugins\font-awesome-4.5.0\HELP-US-OUT.txt" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\.gitignore" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\demo.html" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\images\dev7logo.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\images\nemo.jpg" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\images\toystory.jpg" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\images\up.jpg" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\images\walle.jpg" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\scripts\jquery-1.9.0.min.js" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\demo\style.css" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\jquery.nivo.slider.js" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\jquery.nivo.slider.pack.js" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\license.txt" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\nivo-slider.css" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\bar\arrows.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\bar\bar.css" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\bar\bullets.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\bar\loading.gif" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\dark\arrows.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\dark\bullets.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\dark\dark.css" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\dark\loading.gif" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\default\arrows.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\default\bullets.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\default\default.css" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\default\loading.gif" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\light\arrows.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\light\bullets.png" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\light\light.css" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\themes\light\loading.gif" />
+    <Content Include="Content\Plugins\slidebar\slidebars.css" />
+    <Content Include="Content\Plugins\slidebar\slidebars.min.js" />
     <Content Include="Content\Plugins\toastr\toastr.css" />
     <Content Include="Content\Plugins\toastr\toastr.js" />
     <Content Include="Content\Plugins\toastr\toastr.min.css" />
@@ -452,6 +483,11 @@
     <Content Include="Content\Plugins\toastr\toastr.js.map" />
     <Content Include="Content\Plugins\toastr\toastr.less" />
     <Content Include="Content\Plugins\toastr\toastr.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\nivoslider.jquery.json" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\package.json" />
+    <Content Include="Content\Plugins\Nivo-Slider-master\Nivo-Slider-master\README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

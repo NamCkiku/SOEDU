@@ -10,13 +10,17 @@ namespace SOEDU.Repository.Repositories
 {
     public interface IUsersRepository : IRepository<Sys_Users>
     {
-
+        Sys_Users GetSingleByUsername(string username);
     }
     class UsersRepository : RepositoryBase<Sys_Users>, IUsersRepository
     {
         public UsersRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
+        }
+        public Sys_Users GetSingleByUsername(string username)
+        {
+            return DbContext.Sys_Users.FirstOrDefault(x => x.User_Name == username);
         }
     }
 }
